@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link href="style.css   " rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <title>Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/17054e3227.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="#" class="logo"><h1>VI</h1></a>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+           
+            
+          </ul>
+          
+          
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="label" id="label" onclick="funClick()">
+            <div class='ball'>
+          </label>
+          
+        </nav>
+        <div class="header-text">
+          <p>Web Devloper</p>
+          <h1>
+            Hi, I'm <span>Vivek Butola</span><br />
+            From India
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!------about------>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Image/photo1.JPG" alt="user" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="aboutme">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              dignissimos nam iusto atque deserunt, sapiente cupiditate eaque
+              laboriosam ea ex labore quam, accusamus optio dicta quidem hic
+              tenetur, totam inventore. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Assumenda voluptatum deleniti explicabo,
+              deserunt quae ullam! Beatae atque nesciunt quidem, adipisci magnam
+              quis, unde et sed vitae totam sunt! Consectetur, molestias.
+              Mollitia non minima incidunt magni, voluptatum cum ea nostrum iure
+              quisquam tenetur magnam optio dicta, aperiam neque sit libero
+              exercitationem qui temporibus aspernatur tempore! Accusamus, quae?
+              Minus, ad molestias! Fuga? Corrupti dolorum earum cupiditate,
+              maxime voluptatem ipsam temporibus modi voluptatum omnis alias
+              iste, esse inventore, nisi culpa ducimus dolore ullam quidem quis.
+              Necessitatibus pariatur repellat ducimus fugit voluptates
+              aspernatur nam!
+            </p>
+            <div class="tab-title">
+              <p class="tab-links active-links" onclick="opentab('skills')">
+                Skill
+              </p>
+              <p class="tab-links" onclick="opentab('experince')">Experince</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li>
+                  <span>Full-Stack Devloper</span><br />Full Responsive Web
+                  interfaces
+                </li>
+                <li>
+                  <span>React Devloper</span><br />Reactjs Devloper Interactive
+                  Designing
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experince">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li>
+                  <span>Full-Stack Devloper</span><br />Full Responsive Web
+                  interfaces
+                </li>
+                <li>
+                  <span>React Devloper</span><br />Reactjs Devloper Interactive
+                  Designing
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2018</span><br />SGRR 12th</li>
+                <li><span>2018-2021</span><br />BCA- DOON BUSINEES SCHOOL</li>
+                <li>
+                  <span>2021-current</span><br />MCA- HNBGU SRINAGAR GARHWAL
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------services--------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+
+            <h2>WEB DESIGN</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              sint incidunt explicabo officia sapiente, repellat dolores rem
+              libero distinctio, laboriosam excepturi eos dicta delectus quam.
+              Officiis corrupti molestias laborum asperiores!
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-shapes"></i>
+            <h2>UI/UX DESIGN</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              sint incidunt explicabo officia sapiente, repellat dolores rem
+              libero distinctio, laboriosam excepturi eos dicta delectus quam.
+              Officiis corrupti molestias laborum asperiores!
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-react"></i>
+            <h2>REACT DEVLOPMENT</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              sint incidunt explicabo officia sapiente, repellat dolores rem
+              libero distinctio, laboriosam excepturi eos dicta delectus quam.
+              Officiis corrupti molestias laborum asperiores!
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------portfolio------------>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="image/photo1.jpg" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connects you to the talented people around the
+                world.Download it from the playstore
+              </p>
+              <a href="#"><i class="fi fi-br-link-alt"></i></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image/photo1.jpg" />
+            <div class="layer">
+              <h3>MUsic App</h3>
+              <p>
+                This App Connects You With High Quality Music Which is Just a click away.Download it from the playstore
+              </p>
+              <a href="#"><i class="fi fi-br-link-alt"></i></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image/photo1.jpg" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                This App is an Ecommerce app Where you Can Shopping.Download it from the playstore
+              </p>
+              <a href="#"><i class="fi fi-br-link-alt"></i></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!---------contact---------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p ><i class="fa-solid fa-envelope" ></i>vivekbutola0000@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>8126570059</p>
+            <div class="social-icon">
+              <a href=" https://github.com/vivekbutola3"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.instagram.com/vivekbutola3/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/vivek-butola-45678a1a4/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1yW3e0QO6dA-nwOsJ4kVtKKm4hWON3jho/view?usp=sharing" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Enter Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Enter Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>Copyright &copy; vivek 2022-2023  </p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu=document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right="0";
+      }
+      function closemenu(){
+        sidemenu.style.right="-200px";
+      }
+    </script>
+    <script>
+      const checkbox = document.getElementById('checkbox');
+      var element=document.getElementById('header');
+      checkbox.addEventListener('change', ()=>{
+      document.body.classList.toggle('dark');
+      })
+      var parent = document.getElementById('portfolio');
+      var child = parent.getElementsByClassName('sub-title');
+      // var child = parent1.getElementsByClassName('sub-title');
+      var grandParent_contact=document.getElementById('contact');
+      var parent_contact=grandParent_contact.getElementsByClassName('contact-left');
+      
+      var parent_service=document.getElementsByClassName('services-list');
+      var child_service=document.getElementsByTagName('div');
+      var root=document.querySelector(':root');
+     var stylesRoot=getComputedStyle(root);
+     var color=stylesRoot.getPropertyValue('--color');
+      function funClick() {
+      if(document.getElementById('header')==element){
+      document.getElementById('header').id=('header1');
+      document.getElementsByClassName('label')[0].style.backgroundColor="white";
+      document.getElementsByClassName('ball')[0].style.backgroundColor="black";
+      document.getElementById('about').style.color='white';
+      document.getElementsByClassName('aboutme')[0].style.color='white';
+      document.getElementsByClassName('sub-title')[0].style.color='white';
+      // document.getElementsByClassName('contact-left')[0].style.color='white';
+      child[0].style.color="white";
+      parent_contact[0].style.color="white";
+      // child_contact[0].style.color="white"
+     
+     root.style.setProperty('--color','#00498D');
+
+
+      }else{
+        document.getElementById('header1').id=('header');
+        document.getElementsByClassName('label')[0].style.backgroundColor="black";
+        document.getElementsByClassName('ball')[0].style.backgroundColor="white";
+        document.getElementById('about').style.color='black';
+        document.getElementsByClassName('aboutme')[0].style.color='black';
+        document.getElementsByClassName('sub-title')[0].style.color='black';
+        // document.getElementsByClassName('contact-left')[0].style.color='black';
+        child[0].style.color="black";
+        parent_contact[0].style.color="black";
+        root.style.setProperty('--color','#ebab6b');
+
+      }
+    }
+   
+    </script>
+  </body>
+</html>
