@@ -219,9 +219,9 @@
             <a href="https://drive.google.com/file/d/1yW3e0QO6dA-nwOsJ4kVtKKm4hWON3jho/view?usp=sharing" download class="btn btn2">Download CV</a>
           </div>
           <div class="contact-right">
-            <form>
-              <input type="text" name="name" placeholder="Your Name" required>
-              <input type="email" name="email" placeholder="Enter Your Email" required>
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Enter Your Email" required>
               <textarea name="Message" rows="6" placeholder="Enter Your Message"></textarea>
               <button type="submit" class="btn btn2">Submit</button>
 
@@ -304,6 +304,17 @@
       }
     }
    
+    </script>
+ <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxFCNXHHmNCXDMRCeMcpgS3O_LIW4zji50cdzAb86RMYhitwG1274an_IsSkggqM1as/exec'
+      const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
     </script>
   </body>
 </html>
